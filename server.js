@@ -25,6 +25,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'))
 });
 
+// Wildcard route, so user is directed back to index.html, no matter the query/parameter
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/index.html'))
+});
+
 // App listening to PORT
 app.listen(PORT, () => {
     console.log(`App listening at http://localhost:${PORT}`)
