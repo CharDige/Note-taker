@@ -2,11 +2,17 @@
 const express = require('express');
 const path = require('path');
 
+// cLog export
+const { clog } = require('./middleware/clog');
+
 // PORT
 const PORT = 3001;
 
 // app variable with Express.js
 const app = express();
+
+// Importing the cLog middleware
+app.use(clog);
 
 // Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
