@@ -1,7 +1,6 @@
 // Using Express Router
 const notes = require('express').Router();
 
-const e = require('express');
 // Module exports
 const { v4: uuidv4 } = require('uuid');
 const { readFromFile, readAndAppend, writeToFile } = require('../helpers/fsUtils');
@@ -32,3 +31,5 @@ notes.post('/', (req, res) => {
         res.error('Error - Note not added');
     }
 });
+
+module.exports = notes;
