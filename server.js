@@ -2,7 +2,7 @@
 const express = require('express');
 const path = require('path');
 
-// cLog export
+// cLog required
 const { clog } = require('./middleware/clog');
 
 // PORT
