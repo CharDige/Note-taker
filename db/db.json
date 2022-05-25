@@ -1,26 +1,22 @@
 [
     {
-        "title": "Test Title",
-        "text": "Test text"
+        "title": "Send draft project proposal",
+        "text": "Send the proposal to manager for review for approval.",
+        "id": "fcd2ba12-f4db-48b0-a3e0-90f468c6c0dc"
     },
     {
-        "title": "Hello",
-        "text": "Hello",
-        "id": "2668f070-2fdd-41b8-bc8f-ebb8919c1bf6"
+        "title": "Check-in with staff",
+        "text": "Organise meeting with individual staff members and check-in with them.",
+        "id": "3d8db1ba-1bcc-4cc1-876d-af167da4c527"
     },
     {
-        "title": "Hello",
-        "text": "Hello",
-        "id": "a507f904-5766-4c98-b952-db471c0d7a0e"
+        "title": "Pay the lease",
+        "text": "Send this through via EFT by COB today.",
+        "id": "e7bf46ea-8e18-419b-94b8-298048e92571"
     },
     {
-        "title": "What's happening",
-        "text": "Here's what's happening",
-        "id": "8b7a279a-b77f-4aff-825c-9ca4f69719c6"
-    },
-    {
-        "title": "New note",
-        "text": "Testing this new note",
-        "id": "a0305f10-051a-439e-bc0e-bb66ea88cf50"
+        "title": "Organise catering",
+        "text": "Project launch catering for end of month.",
+        "id": "028b46f6-32e7-4819-9e33-ef1b4694d9d2"
     }
 ]
