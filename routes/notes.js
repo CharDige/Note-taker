@@ -14,12 +14,26 @@ notes.get('/', (req, res) => {
 
 // GET route to retrieve specific note
 notes.get('/:id', (req, res) => {
-    const id = req.params.id;
+    const noteId = req.params.id;
     readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
-        const result = json.filter((note) => note.id === id);
+        const result = json.filter((note) => note.id === noteId);
         return result.length > 0 ? res.json(result) : res.json('Found no notes with that ID');
+    });
+});
+
+// DELETE route when notes are deleted
+notes.delete('/:id', (req, res) => {
+    const noteId = req.params.id;
+    readFromFile('./db/db.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+        const result = json.filter((note) => note.id !== noteId);
+
+        writeToFile('./db/db.json', result);
+
+        res.json(`The note ${noteId} has been deleted!`);
     });
 });
 
