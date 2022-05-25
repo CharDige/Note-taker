@@ -12,6 +12,17 @@ notes.get('/', (req, res) => {
     res.json(JSON.parse(data)));
 });
 
+// GET route to retrieve specific note
+notes.get('/:note_id', (req, res) => {
+    const noteId = req.params.note_id;
+    readFromFile('./db/db.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+        const result = json.filter((note) => note.note_id === noteId);
+        return result.length > 0 ? res.json(result) : res.json('Found no notes with that ID');
+    });
+})
+
 // POST route for adding a new note
 notes.post('/', (req, res) => {
     console.log(req.body);
