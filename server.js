@@ -25,6 +25,11 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'))
 });
 
+// GET route for notes page
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/notes.html'))
+});
+
 // Wildcard route, so user is directed back to index.html, no matter the query/parameter
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'))
