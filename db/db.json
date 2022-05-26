@@ -18,5 +18,10 @@
         "title": "Organise catering",
         "text": "Project launch catering for end of month.",
         "id": "028b46f6-32e7-4819-9e33-ef1b4694d9d2"
+    },
+    {
+        "title": "Reschedule workshop",
+        "text": "Change it to be same time next week",
+        "id": "e5175852-6f21-4689-a04b-b09a0be5cc7e"
     }
 ]
