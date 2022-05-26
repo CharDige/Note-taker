@@ -1,4 +1,4 @@
-// Customer middleware which logs the type and path of each request to the server
+// Custom middleware which logs the type and path of each request to the server
 const clog = (req, res, next) => {
     const fgGreen = "\x1b[32m";
     const fgCyan = "\x1b[36m";
